@@ -8,6 +8,7 @@ import { ApiIdentitiesApplicationModule } from '@bh/api/identities/application';
 import { ApiOrdersApplicationModule } from '@bh/api/orders/application';
 import { ApiProductsApplicationModule } from '@bh/api/products/application';
 import { Env, NodeEnv } from '@bh/api/shared/infrastructure';
+import { ignoreCaseCompare } from '@bh/shared/infrastructure';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { ThrottlerModule } from '@nestjs/throttler';
 import { TypeOrmModule, TypeOrmModuleAsyncOptions } from '@nestjs/typeorm';
