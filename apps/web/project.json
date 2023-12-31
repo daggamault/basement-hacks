@@ -17,7 +17,13 @@
         "tsConfig": "apps/web/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": ["apps/web/src/favicon.ico", "apps/web/src/assets"],
-        "styles": ["apps/web/src/styles.scss"],
+        "styles": [
+          "node_modules/primeng/resources/themes/md-dark-deeppurple/theme.css",
+          "node_modules/primeng/resources/primeng.css",
+          "node_modules/primeicons/primeicons.css",
+          "node_modules/primeflex/primeflex.css",
+          "apps/web/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
