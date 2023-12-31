@@ -1,8 +1,18 @@
 {
   "recommendations": [
-    "nrwl.angular-console",
+    "AdrianCuadrado.npm-install-reminder",
+    "Angular.ng-template",
+    "christian-kohler.npm-intellisense",
+    "codeandstuff.package-json-upgrade",
+    "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "firsttris.vscode-jest-runner",
-    "dbaeumer.vscode-eslint"
+    "G-Fidalgo.cypress-runner",
+    "ghmcadams.lintlens",
+    "lacroixdavid1.vscode-format-context-menu",
+    "nrwl.angular-console",
+    "redhat.vscode-yaml",
+    "wix.vscode-import-cost",
+    "yzhang.markdown-all-in-one"
   ]
 }

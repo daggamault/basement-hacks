@@ -1,1 +1,1 @@
-export * from './lib/web-catalog-infrastructure/web-catalog-infrastructure.component';
+export * from './lib/tmp';

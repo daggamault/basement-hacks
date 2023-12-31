@@ -1,1 +1,1 @@
-export * from './lib/web-admin-infrastructure/web-admin-infrastructure.component';
+export * from './lib/tmp';

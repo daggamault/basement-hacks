@@ -1,0 +1,7 @@
+{
+  "name": "@bh/web/shared/application",
+  "version": "0.0.1",
+  "peerDependencies": {},
+  "dependencies": {},
+  "sideEffects": false
+}

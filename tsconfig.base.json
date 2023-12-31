@@ -62,6 +62,13 @@
       "@bh/api/products/infrastructure": [
         "libs/api/products/infrastructure/src/index.ts"
       ],
+      "@bh/api/shared/application": [
+        "libs/api/shared/application/src/index.ts"
+      ],
+      "@bh/api/shared/domain": ["libs/api/shared/domain/src/index.ts"],
+      "@bh/api/shared/infrastructure": [
+        "libs/api/shared/infrastructure/src/index.ts"
+      ],
       "@bh/web/admin/application": ["libs/web/admin/application/src/index.ts"],
       "@bh/web/admin/domain": ["libs/web/admin/domain/src/index.ts"],
       "@bh/web/admin/infrastructure": [
@@ -85,6 +92,13 @@
       "@bh/web/customer/domain": ["libs/web/customer/domain/src/index.ts"],
       "@bh/web/customer/infrastructure": [
         "libs/web/customer/infrastructure/src/index.ts"
+      ],
+      "@bh/web/shared/application": [
+        "libs/web/shared/application/src/index.ts"
+      ],
+      "@bh/web/shared/domain": ["libs/web/shared/domain/src/index.ts"],
+      "@bh/web/shared/infrastructure": [
+        "libs/web/shared/infrastructure/src/index.ts"
       ]
     }
   },

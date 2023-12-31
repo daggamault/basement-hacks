@@ -1,1 +1,1 @@
-export * from './lib/web-customer-infrastructure/web-customer-infrastructure.component';
+export * from './lib/tmp';
