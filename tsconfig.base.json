@@ -77,6 +77,11 @@
       "@bh/web/admin/infrastructure": [
         "libs/web/admin/infrastructure/src/index.ts"
       ],
+      "@bh/web/auth/application": ["libs/web/auth/application/src/index.ts"],
+      "@bh/web/auth/domain": ["libs/web/auth/domain/src/index.ts"],
+      "@bh/web/auth/infrastructure": [
+        "libs/web/auth/infrastructure/src/index.ts"
+      ],
       "@bh/web/cart/application": ["libs/web/cart/application/src/index.ts"],
       "@bh/web/cart/domain": ["libs/web/cart/domain/src/index.ts"],
       "@bh/web/cart/infrastructure": [

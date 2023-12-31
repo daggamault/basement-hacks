@@ -2,7 +2,9 @@
   "name": "@bh/web/admin/application",
   "version": "0.0.1",
   "peerDependencies": {
-    "@angular/router": "~17.0.0"
+    "@angular/router": "~17.0.0",
+    "@angular/core": "~17.0.0",
+    "@bh/web/shared/application": "*"
   },
   "dependencies": {},
   "sideEffects": false

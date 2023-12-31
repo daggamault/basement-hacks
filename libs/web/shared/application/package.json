@@ -1,7 +1,12 @@
 {
   "name": "@bh/web/shared/application",
   "version": "0.0.1",
-  "peerDependencies": {},
+  "peerDependencies": {
+    "@angular/common": "~17.0.0",
+    "@angular/core": "~17.0.0",
+    "primeng": "^17.3.0",
+    "@angular/router": "~17.0.0"
+  },
   "dependencies": {},
   "sideEffects": false
 }

@@ -1,0 +1,58 @@
+<div class="flex flex-column h-full">
+  <p-toolbar styleClass="shadow-2 border-noround bg-primary-reverse">
+    <div class="p-toolbar-group-left gap-3">
+      <p-button
+        icon="pi pi-bars"
+        [rounded]="true"
+        (onClick)="sidebarVisible = true"
+        pTooltip="side nav"
+        class="md:hidden"
+      />
+      <img src="assets/logo-wordless.png" alt="logo" height="50" />
+    </div>
+    <div class="p-toolbar-group-right gap-3">
+      <p-button
+        icon="pi pi-cog"
+        [rounded]="true"
+        [text]="true"
+        pTooltip="admin"
+        tooltipPosition="bottom"
+        [disabled]="busy"
+      />
+      <p-button
+        icon="pi pi-chart-line"
+        [rounded]="true"
+        [text]="true"
+        pTooltip="analytics"
+        tooltipPosition="bottom"
+        [disabled]="busy"
+      />
+      <p-button
+        icon="pi pi-user"
+        [rounded]="true"
+        [text]="true"
+        pTooltip="user"
+        tooltipPosition="bottom"
+        [disabled]="busy"
+      />
+    </div>
+  </p-toolbar>
+  <ng-template #sideNav>
+    <ng-content select="[sidenav]" />
+  </ng-template>
+  <p-sidebar [(visible)]="sidebarVisible">
+    <ng-container *ngTemplateOutlet="sideNav" />
+  </p-sidebar>
+  <div class="flex gap-3 flex-grow-1">
+    <div class="flex-none w-3 md:w-2 hidden md:block">
+      <div class="scrolling-content">
+        <ng-container *ngTemplateOutlet="sideNav" />
+      </div>
+    </div>
+    <div class="flex-grow-1">
+      <div class="scrolling-content">
+        <ng-content select="[content]" />
+      </div>
+    </div>
+  </div>
+</div>

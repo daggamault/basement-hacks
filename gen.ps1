@@ -8,7 +8,7 @@
 #   "npx nx g @nx/nest:library --name=infrastructure --buildable=true --directory=libs/api/$domain --projectNameAndRootFormat=derived --tags=api,infrastructure" | Invoke-Expression
 # }
 
-# $features = @("admin", "catalog", "cart", "customer")
+# $features = @("auth", "admin", "catalog", "cart", "customer")
 # foreach($feature in $features) {
 #   "npx nx g @nx/angular:library --name=application --buildable=true --directory=libs/web/$feature --routing=true --projectNameAndRootFormat=derived --style=scss --tags='web,application'" | Invoke-Expression
 #   "npx nx g @nx/angular:library --name=domain --buildable=true --directory=libs/web/$feature --projectNameAndRootFormat=derived --style=scss --tags='web,domain'" | Invoke-Expression
