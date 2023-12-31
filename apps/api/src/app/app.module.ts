@@ -1,5 +1,3 @@
-import { Module } from '@nestjs/common';
-
 import { ApiAgentsApplicationModule } from '@bh/api/agents/application';
 import { ApiCartsApplicationModule } from '@bh/api/carts/application';
 import { ApiCatalogsApplicationModule } from '@bh/api/catalogs/application';
@@ -9,6 +7,7 @@ import { ApiOrdersApplicationModule } from '@bh/api/orders/application';
 import { ApiProductsApplicationModule } from '@bh/api/products/application';
 import { Env, NodeEnv } from '@bh/api/shared/infrastructure';
 import { ignoreCaseCompare } from '@bh/shared/infrastructure';
+import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { ThrottlerModule } from '@nestjs/throttler';
 import { TypeOrmModule, TypeOrmModuleAsyncOptions } from '@nestjs/typeorm';
