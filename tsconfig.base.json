@@ -69,6 +69,9 @@
       "@bh/api/shared/infrastructure": [
         "libs/api/shared/infrastructure/src/index.ts"
       ],
+      "@bh/shared/application": ["libs/shared/application/src/index.ts"],
+      "@bh/shared/domain": ["libs/shared/domain/src/index.ts"],
+      "@bh/shared/infrastructure": ["libs/shared/infrastructure/src/index.ts"],
       "@bh/web/admin/application": ["libs/web/admin/application/src/index.ts"],
       "@bh/web/admin/domain": ["libs/web/admin/domain/src/index.ts"],
       "@bh/web/admin/infrastructure": [
