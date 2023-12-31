@@ -1,0 +1,92 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@bh/api/agents/application": [
+        "libs/api/agents/application/src/index.ts"
+      ],
+      "@bh/api/agents/domain": ["libs/api/agents/domain/src/index.ts"],
+      "@bh/api/agents/infrastructure": [
+        "libs/api/agents/infrastructure/src/index.ts"
+      ],
+      "@bh/api/carts/application": ["libs/api/carts/application/src/index.ts"],
+      "@bh/api/carts/domain": ["libs/api/carts/domain/src/index.ts"],
+      "@bh/api/carts/infrastructure": [
+        "libs/api/carts/infrastructure/src/index.ts"
+      ],
+      "@bh/api/catalogs/application": [
+        "libs/api/catalogs/application/src/index.ts"
+      ],
+      "@bh/api/catalogs/domain": ["libs/api/catalogs/domain/src/index.ts"],
+      "@bh/api/catalogs/infrastructure": [
+        "libs/api/catalogs/infrastructure/src/index.ts"
+      ],
+      "@bh/api/customers/application": [
+        "libs/api/customers/application/src/index.ts"
+      ],
+      "@bh/api/customers/domain": ["libs/api/customers/domain/src/index.ts"],
+      "@bh/api/customers/infrastructure": [
+        "libs/api/customers/infrastructure/src/index.ts"
+      ],
+      "@bh/api/identities/application": [
+        "libs/api/identities/application/src/index.ts"
+      ],
+      "@bh/api/identities/domain": ["libs/api/identities/domain/src/index.ts"],
+      "@bh/api/identities/infrastructure": [
+        "libs/api/identities/infrastructure/src/index.ts"
+      ],
+      "@bh/api/orders/application": [
+        "libs/api/orders/application/src/index.ts"
+      ],
+      "@bh/api/orders/domain": ["libs/api/orders/domain/src/index.ts"],
+      "@bh/api/orders/infrastructure": [
+        "libs/api/orders/infrastructure/src/index.ts"
+      ],
+      "@bh/api/products/application": [
+        "libs/api/products/application/src/index.ts"
+      ],
+      "@bh/api/products/domain": ["libs/api/products/domain/src/index.ts"],
+      "@bh/api/products/infrastructure": [
+        "libs/api/products/infrastructure/src/index.ts"
+      ],
+      "@bh/web/admin/application": ["libs/web/admin/application/src/index.ts"],
+      "@bh/web/admin/domain": ["libs/web/admin/domain/src/index.ts"],
+      "@bh/web/admin/infrastructure": [
+        "libs/web/admin/infrastructure/src/index.ts"
+      ],
+      "@bh/web/cart/application": ["libs/web/cart/application/src/index.ts"],
+      "@bh/web/cart/domain": ["libs/web/cart/domain/src/index.ts"],
+      "@bh/web/cart/infrastructure": [
+        "libs/web/cart/infrastructure/src/index.ts"
+      ],
+      "@bh/web/catalog/application": [
+        "libs/web/catalog/application/src/index.ts"
+      ],
+      "@bh/web/catalog/domain": ["libs/web/catalog/domain/src/index.ts"],
+      "@bh/web/catalog/infrastructure": [
+        "libs/web/catalog/infrastructure/src/index.ts"
+      ],
+      "@bh/web/customer/application": [
+        "libs/web/customer/application/src/index.ts"
+      ],
+      "@bh/web/customer/domain": ["libs/web/customer/domain/src/index.ts"],
+      "@bh/web/customer/infrastructure": [
+        "libs/web/customer/infrastructure/src/index.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

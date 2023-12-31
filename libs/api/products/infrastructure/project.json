@@ -1,0 +1,31 @@
+{
+  "name": "api-products-infrastructure",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/api/products/infrastructure/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/api/products/infrastructure",
+        "tsConfig": "libs/api/products/infrastructure/tsconfig.lib.json",
+        "packageJson": "libs/api/products/infrastructure/package.json",
+        "main": "libs/api/products/infrastructure/src/index.ts",
+        "assets": ["libs/api/products/infrastructure/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/api/products/infrastructure/jest.config.ts"
+      }
+    }
+  },
+  "tags": ["api", "infrastructure"]
+}

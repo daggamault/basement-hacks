@@ -1,0 +1,31 @@
+{
+  "name": "api-agents-application",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/api/agents/application/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/api/agents/application",
+        "tsConfig": "libs/api/agents/application/tsconfig.lib.json",
+        "packageJson": "libs/api/agents/application/package.json",
+        "main": "libs/api/agents/application/src/index.ts",
+        "assets": ["libs/api/agents/application/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/api/agents/application/jest.config.ts"
+      }
+    }
+  },
+  "tags": ["api", "application"]
+}
