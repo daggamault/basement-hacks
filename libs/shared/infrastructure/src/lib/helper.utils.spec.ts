@@ -1,6 +1,6 @@
 import { ignoreCaseCompare, replaceCommas } from './helper.utils';
 
-describe('Helper Utils', () => {
+describe('Helpers', () => {
   it('should ignore case & compare', () => {
     expect(ignoreCaseCompare('test', 'TEST')).toBe(true);
     expect(ignoreCaseCompare('test', 'test')).toBe(true);

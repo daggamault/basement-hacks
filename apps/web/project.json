@@ -28,6 +28,12 @@
       },
       "configurations": {
         "production": {
+          "fileReplacements": [
+            {
+              "replace": "libs/shared/domain/src/lib/decorator-hacks/api-decorators.ts",
+              "with": "libs/shared/domain/src/lib/decorator-hacks/noop-decorators.ts"
+            }
+          ],
           "budgets": [
             {
               "type": "initial",
@@ -43,6 +49,12 @@
           "outputHashing": "all"
         },
         "development": {
+          "fileReplacements": [
+            {
+              "replace": "libs/shared/domain/src/lib/decorator-hacks/api-decorators.ts",
+              "with": "libs/shared/domain/src/lib/decorator-hacks/noop-decorators.ts"
+            }
+          ],
           "buildOptimizer": false,
           "optimization": false,
           "vendorChunk": true,
