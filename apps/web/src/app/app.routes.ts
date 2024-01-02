@@ -1,16 +1,16 @@
 import { Route } from '@angular/router';
-import { webAdminApplicationRoutes } from '@bh/web/admin/application';
-import { webAuthApplicationRoutes } from '@bh/web/auth/application';
-import { webCartApplicationRoutes } from '@bh/web/cart/application';
-import { webCatalogApplicationRoutes } from '@bh/web/catalog/application';
-import { webCustomerApplicationRoutes } from '@bh/web/customer/application';
+import { webAdminPresentationRoutes } from '@bh/web/admin/presentation';
+import { webAuthPresentationRoutes } from '@bh/web/auth/presentation';
+import { webCartPresentationRoutes } from '@bh/web/cart/presentation';
+import { webCatalogPresentationRoutes } from '@bh/web/catalog/presentation';
+import { webCustomerPresentationRoutes } from '@bh/web/customer/presentation';
 
 export const appRoutes: Route[] = [
-  ...webAdminApplicationRoutes,
-  ...webAuthApplicationRoutes,
-  ...webCartApplicationRoutes,
-  ...webCatalogApplicationRoutes,
-  ...webCustomerApplicationRoutes,
+  ...webAdminPresentationRoutes,
+  ...webAuthPresentationRoutes,
+  ...webCartPresentationRoutes,
+  ...webCatalogPresentationRoutes,
+  ...webCustomerPresentationRoutes,
   {
     path: '**',
     redirectTo: 'customer',

@@ -3,7 +3,11 @@
   "version": "0.0.1",
   "dependencies": {
     "tslib": "^2.3.0",
-    "@nestjs/common": "^10.0.2"
+    "@nestjs/common": "^10.0.2",
+    "@bh/shared/domain": "*",
+    "class-transformer": "^0.5.1",
+    "typeorm": "0.3.17",
+    "bcryptjs": "^2.4.3"
   },
   "type": "commonjs",
   "main": "./src/index.js",
