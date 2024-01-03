@@ -1,0 +1,31 @@
+{
+  "name": "api-catalogs-utils",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/api/catalogs/utils/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/api/catalogs/utils",
+        "tsConfig": "libs/api/catalogs/utils/tsconfig.lib.json",
+        "packageJson": "libs/api/catalogs/utils/package.json",
+        "main": "libs/api/catalogs/utils/src/index.ts",
+        "assets": ["libs/api/catalogs/utils/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/api/catalogs/utils/jest.config.ts"
+      }
+    }
+  },
+  "tags": ["api", "utils"]
+}

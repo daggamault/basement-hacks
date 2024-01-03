@@ -1,0 +1,31 @@
+{
+  "name": "api-carts-utils",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/api/carts/utils/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/api/carts/utils",
+        "tsConfig": "libs/api/carts/utils/tsconfig.lib.json",
+        "packageJson": "libs/api/carts/utils/package.json",
+        "main": "libs/api/carts/utils/src/index.ts",
+        "assets": ["libs/api/carts/utils/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/api/carts/utils/jest.config.ts"
+      }
+    }
+  },
+  "tags": ["api", "utils"]
+}

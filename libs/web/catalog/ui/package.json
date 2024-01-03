@@ -1,0 +1,10 @@
+{
+  "name": "@bh/web/catalog/ui",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^17.0.0",
+    "@angular/core": "^17.0.0"
+  },
+  "dependencies": {},
+  "sideEffects": false
+}

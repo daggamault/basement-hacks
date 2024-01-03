@@ -1,0 +1,37 @@
+{
+  "name": "web-customer-utils",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/web/customer/utils/src",
+  "prefix": "bh",
+  "tags": ["web", "utils"],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/web/customer/utils/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/web/customer/utils/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/web/customer/utils/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/web/customer/utils/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    }
+  }
+}

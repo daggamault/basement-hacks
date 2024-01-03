@@ -1,0 +1,31 @@
+{
+  "name": "api-carts-data-access",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/api/carts/data-access/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/api/carts/data-access",
+        "tsConfig": "libs/api/carts/data-access/tsconfig.lib.json",
+        "packageJson": "libs/api/carts/data-access/package.json",
+        "main": "libs/api/carts/data-access/src/index.ts",
+        "assets": ["libs/api/carts/data-access/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/api/carts/data-access/jest.config.ts"
+      }
+    }
+  },
+  "tags": ["api", "data-access"]
+}

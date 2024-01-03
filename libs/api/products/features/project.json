@@ -1,0 +1,31 @@
+{
+  "name": "api-products-features",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/api/products/features/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/api/products/features",
+        "tsConfig": "libs/api/products/features/tsconfig.lib.json",
+        "packageJson": "libs/api/products/features/package.json",
+        "main": "libs/api/products/features/src/index.ts",
+        "assets": ["libs/api/products/features/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/api/products/features/jest.config.ts"
+      }
+    }
+  },
+  "tags": ["api", "features"]
+}

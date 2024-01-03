@@ -1,0 +1,31 @@
+{
+  "name": "api-customers-features",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/api/customers/features/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/api/customers/features",
+        "tsConfig": "libs/api/customers/features/tsconfig.lib.json",
+        "packageJson": "libs/api/customers/features/package.json",
+        "main": "libs/api/customers/features/src/index.ts",
+        "assets": ["libs/api/customers/features/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/api/customers/features/jest.config.ts"
+      }
+    }
+  },
+  "tags": ["api", "features"]
+}
