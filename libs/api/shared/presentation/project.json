@@ -1,0 +1,31 @@
+{
+  "name": "api-shared-presentation",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/api/shared/presentation/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/api/shared/presentation",
+        "tsConfig": "libs/api/shared/presentation/tsconfig.lib.json",
+        "packageJson": "libs/api/shared/presentation/package.json",
+        "main": "libs/api/shared/presentation/src/index.ts",
+        "assets": ["libs/api/shared/presentation/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/api/shared/presentation/jest.config.ts"
+      }
+    }
+  },
+  "tags": ["api", "presentation"]
+}

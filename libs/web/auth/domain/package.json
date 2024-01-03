@@ -1,0 +1,7 @@
+{
+  "name": "@bh/web/auth/domain",
+  "version": "0.0.1",
+  "peerDependencies": {},
+  "dependencies": {},
+  "sideEffects": false
+}

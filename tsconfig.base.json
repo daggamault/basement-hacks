@@ -15,78 +15,138 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@bh/api/agents/data-access": [
-        "libs/api/agents/data-access/src/index.ts"
+      "@bh/api/agents/application": [
+        "libs/api/agents/application/src/index.ts"
       ],
-      "@bh/api/agents/features": ["libs/api/agents/features/src/index.ts"],
-      "@bh/api/agents/utils": ["libs/api/agents/utils/src/index.ts"],
-      "@bh/api/carts/data-access": ["libs/api/carts/data-access/src/index.ts"],
-      "@bh/api/carts/features": ["libs/api/carts/features/src/index.ts"],
-      "@bh/api/carts/utils": ["libs/api/carts/utils/src/index.ts"],
-      "@bh/api/catalogs/data-access": [
-        "libs/api/catalogs/data-access/src/index.ts"
+      "@bh/api/agents/domain": ["libs/api/agents/domain/src/index.ts"],
+      "@bh/api/agents/infrastructure": [
+        "libs/api/agents/infrastructure/src/index.ts"
       ],
-      "@bh/api/catalogs/features": ["libs/api/catalogs/features/src/index.ts"],
-      "@bh/api/catalogs/utils": ["libs/api/catalogs/utils/src/index.ts"],
-      "@bh/api/customers/data-access": [
-        "libs/api/customers/data-access/src/index.ts"
+      "@bh/api/agents/presentation": [
+        "libs/api/agents/presentation/src/index.ts"
       ],
-      "@bh/api/customers/features": [
-        "libs/api/customers/features/src/index.ts"
+      "@bh/api/carts/application": ["libs/api/carts/application/src/index.ts"],
+      "@bh/api/carts/domain": ["libs/api/carts/domain/src/index.ts"],
+      "@bh/api/carts/infrastructure": [
+        "libs/api/carts/infrastructure/src/index.ts"
       ],
-      "@bh/api/customers/utils": ["libs/api/customers/utils/src/index.ts"],
-      "@bh/api/identities/data-access": [
-        "libs/api/identities/data-access/src/index.ts"
+      "@bh/api/carts/presentation": [
+        "libs/api/carts/presentation/src/index.ts"
       ],
-      "@bh/api/identities/features": [
-        "libs/api/identities/features/src/index.ts"
+      "@bh/api/catalogs/application": [
+        "libs/api/catalogs/application/src/index.ts"
       ],
-      "@bh/api/identities/utils": ["libs/api/identities/utils/src/index.ts"],
-      "@bh/api/orders/data-access": [
-        "libs/api/orders/data-access/src/index.ts"
+      "@bh/api/catalogs/domain": ["libs/api/catalogs/domain/src/index.ts"],
+      "@bh/api/catalogs/infrastructure": [
+        "libs/api/catalogs/infrastructure/src/index.ts"
       ],
-      "@bh/api/orders/features": ["libs/api/orders/features/src/index.ts"],
-      "@bh/api/orders/utils": ["libs/api/orders/utils/src/index.ts"],
-      "@bh/api/products/data-access": [
-        "libs/api/products/data-access/src/index.ts"
+      "@bh/api/catalogs/presentation": [
+        "libs/api/catalogs/presentation/src/index.ts"
       ],
-      "@bh/api/products/features": ["libs/api/products/features/src/index.ts"],
-      "@bh/api/products/utils": ["libs/api/products/utils/src/index.ts"],
-      "@bh/api/shared/data-access": [
-        "libs/api/shared/data-access/src/index.ts"
+      "@bh/api/customers/application": [
+        "libs/api/customers/application/src/index.ts"
       ],
-      "@bh/api/shared/utils": ["libs/api/shared/utils/src/index.ts"],
-      "@bh/shared/data-access": ["libs/shared/data-access/src/index.ts"],
-      "@bh/shared/utils": ["libs/shared/utils/src/index.ts"],
-      "@bh/web/admin/data-access": ["libs/web/admin/data-access/src/index.ts"],
-      "@bh/web/admin/features": ["libs/web/admin/features/src/index.ts"],
-      "@bh/web/admin/ui": ["libs/web/admin/ui/src/index.ts"],
-      "@bh/web/admin/utils": ["libs/web/admin/utils/src/index.ts"],
-      "@bh/web/auth/data-access": ["libs/web/auth/data-access/src/index.ts"],
-      "@bh/web/auth/features": ["libs/web/auth/features/src/index.ts"],
-      "@bh/web/auth/ui": ["libs/web/auth/ui/src/index.ts"],
-      "@bh/web/auth/utils": ["libs/web/auth/utils/src/index.ts"],
-      "@bh/web/cart/data-access": ["libs/web/cart/data-access/src/index.ts"],
-      "@bh/web/cart/features": ["libs/web/cart/features/src/index.ts"],
-      "@bh/web/cart/ui": ["libs/web/cart/ui/src/index.ts"],
-      "@bh/web/cart/utils": ["libs/web/cart/utils/src/index.ts"],
-      "@bh/web/catalog/data-access": [
-        "libs/web/catalog/data-access/src/index.ts"
+      "@bh/api/customers/domain": ["libs/api/customers/domain/src/index.ts"],
+      "@bh/api/customers/infrastructure": [
+        "libs/api/customers/infrastructure/src/index.ts"
       ],
-      "@bh/web/catalog/features": ["libs/web/catalog/features/src/index.ts"],
-      "@bh/web/catalog/ui": ["libs/web/catalog/ui/src/index.ts"],
-      "@bh/web/catalog/utils": ["libs/web/catalog/utils/src/index.ts"],
-      "@bh/web/customer/data-access": [
-        "libs/web/customer/data-access/src/index.ts"
+      "@bh/api/customers/presentation": [
+        "libs/api/customers/presentation/src/index.ts"
       ],
-      "@bh/web/customer/features": ["libs/web/customer/features/src/index.ts"],
-      "@bh/web/customer/ui": ["libs/web/customer/ui/src/index.ts"],
-      "@bh/web/customer/utils": ["libs/web/customer/utils/src/index.ts"],
-      "@bh/web/shared/data-access": [
-        "libs/web/shared/data-access/src/index.ts"
+      "@bh/api/identities/application": [
+        "libs/api/identities/application/src/index.ts"
       ],
-      "@bh/web/shared/ui": ["libs/web/shared/ui/src/index.ts"],
-      "@bh/web/shared/utils": ["libs/web/shared/utils/src/index.ts"]
+      "@bh/api/identities/domain": ["libs/api/identities/domain/src/index.ts"],
+      "@bh/api/identities/infrastructure": [
+        "libs/api/identities/infrastructure/src/index.ts"
+      ],
+      "@bh/api/identities/presentation": [
+        "libs/api/identities/presentation/src/index.ts"
+      ],
+      "@bh/api/orders/application": [
+        "libs/api/orders/application/src/index.ts"
+      ],
+      "@bh/api/orders/domain": ["libs/api/orders/domain/src/index.ts"],
+      "@bh/api/orders/infrastructure": [
+        "libs/api/orders/infrastructure/src/index.ts"
+      ],
+      "@bh/api/orders/presentation": [
+        "libs/api/orders/presentation/src/index.ts"
+      ],
+      "@bh/api/products/application": [
+        "libs/api/products/application/src/index.ts"
+      ],
+      "@bh/api/products/domain": ["libs/api/products/domain/src/index.ts"],
+      "@bh/api/products/infrastructure": [
+        "libs/api/products/infrastructure/src/index.ts"
+      ],
+      "@bh/api/products/presentation": [
+        "libs/api/products/presentation/src/index.ts"
+      ],
+      "@bh/api/shared/application": [
+        "libs/api/shared/application/src/index.ts"
+      ],
+      "@bh/api/shared/domain": ["libs/api/shared/domain/src/index.ts"],
+      "@bh/api/shared/infrastructure": [
+        "libs/api/shared/infrastructure/src/index.ts"
+      ],
+      "@bh/api/shared/presentation": [
+        "libs/api/shared/presentation/src/index.ts"
+      ],
+      "@bh/shared/application": ["libs/shared/application/src/index.ts"],
+      "@bh/shared/domain": ["libs/shared/domain/src/index.ts"],
+      "@bh/shared/infrastructure": ["libs/shared/infrastructure/src/index.ts"],
+      "@bh/shared/presentation": ["libs/shared/presentation/src/index.ts"],
+      "@bh/web/admin/application": ["libs/web/admin/application/src/index.ts"],
+      "@bh/web/admin/domain": ["libs/web/admin/domain/src/index.ts"],
+      "@bh/web/admin/infrastructure": [
+        "libs/web/admin/infrastructure/src/index.ts"
+      ],
+      "@bh/web/admin/presentation": [
+        "libs/web/admin/presentation/src/index.ts"
+      ],
+      "@bh/web/auth/application": ["libs/web/auth/application/src/index.ts"],
+      "@bh/web/auth/domain": ["libs/web/auth/domain/src/index.ts"],
+      "@bh/web/auth/infrastructure": [
+        "libs/web/auth/infrastructure/src/index.ts"
+      ],
+      "@bh/web/auth/presentation": ["libs/web/auth/presentation/src/index.ts"],
+      "@bh/web/cart/application": ["libs/web/cart/application/src/index.ts"],
+      "@bh/web/cart/domain": ["libs/web/cart/domain/src/index.ts"],
+      "@bh/web/cart/infrastructure": [
+        "libs/web/cart/infrastructure/src/index.ts"
+      ],
+      "@bh/web/cart/presentation": ["libs/web/cart/presentation/src/index.ts"],
+      "@bh/web/catalog/application": [
+        "libs/web/catalog/application/src/index.ts"
+      ],
+      "@bh/web/catalog/domain": ["libs/web/catalog/domain/src/index.ts"],
+      "@bh/web/catalog/infrastructure": [
+        "libs/web/catalog/infrastructure/src/index.ts"
+      ],
+      "@bh/web/catalog/presentation": [
+        "libs/web/catalog/presentation/src/index.ts"
+      ],
+      "@bh/web/customer/application": [
+        "libs/web/customer/application/src/index.ts"
+      ],
+      "@bh/web/customer/domain": ["libs/web/customer/domain/src/index.ts"],
+      "@bh/web/customer/infrastructure": [
+        "libs/web/customer/infrastructure/src/index.ts"
+      ],
+      "@bh/web/customer/presentation": [
+        "libs/web/customer/presentation/src/index.ts"
+      ],
+      "@bh/web/shared/application": [
+        "libs/web/shared/application/src/index.ts"
+      ],
+      "@bh/web/shared/domain": ["libs/web/shared/domain/src/index.ts"],
+      "@bh/web/shared/infrastructure": [
+        "libs/web/shared/infrastructure/src/index.ts"
+      ],
+      "@bh/web/shared/presentation": [
+        "libs/web/shared/presentation/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

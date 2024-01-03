@@ -1,0 +1,31 @@
+{
+  "name": "api-identities-domain",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/api/identities/domain/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/api/identities/domain",
+        "tsConfig": "libs/api/identities/domain/tsconfig.lib.json",
+        "packageJson": "libs/api/identities/domain/package.json",
+        "main": "libs/api/identities/domain/src/index.ts",
+        "assets": ["libs/api/identities/domain/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/api/identities/domain/jest.config.ts"
+      }
+    }
+  },
+  "tags": ["api", "domain"]
+}

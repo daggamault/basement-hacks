@@ -1,0 +1,31 @@
+{
+  "name": "api-customers-domain",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/api/customers/domain/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/api/customers/domain",
+        "tsConfig": "libs/api/customers/domain/tsconfig.lib.json",
+        "packageJson": "libs/api/customers/domain/package.json",
+        "main": "libs/api/customers/domain/src/index.ts",
+        "assets": ["libs/api/customers/domain/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/api/customers/domain/jest.config.ts"
+      }
+    }
+  },
+  "tags": ["api", "domain"]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "@bh/web/admin/presentation",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/core": "^17.0.0",
+    "@angular/router": "~17.0.0",
+    "@bh/web/shared/application": "*"
+  },
+  "dependencies": {},
+  "sideEffects": false
+}
