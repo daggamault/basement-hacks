@@ -28,13 +28,13 @@
     "@ngrx/eslint-plugin": "^17.0.1",
     "@ngrx/schematics": "^17.0.1",
     "@ngrx/store-devtools": "^17.0.1",
-    "@nx/angular": "^17.2.8",
+    "@nx/angular": "17.2.8",
     "@nx/cypress": "17.2.8",
     "@nx/eslint": "17.2.8",
     "@nx/eslint-plugin": "17.2.8",
     "@nx/jest": "17.2.8",
     "@nx/js": "17.2.8",
-    "@nx/nest": "^17.2.8",
+    "@nx/nest": "17.2.8",
     "@nx/node": "17.2.8",
     "@nx/web": "17.2.8",
     "@nx/webpack": "17.2.8",
@@ -112,3 +112,4 @@
     "zone.js": "~0.14.0"
   }
 }
+
